@@ -94,7 +94,7 @@ clear: both;
   font-size: 14px;
 }
 
-.hero-opacity {
+.bg-opacity {
   position: absolute;
   top:0;right:0;bottom:0;left:0;
   background: rgba(0,0,0,0.8);
@@ -145,7 +145,7 @@ clear: both;
   
 }
 #location {
-  width: 980px;
+  width: 740px;
   margin:auto;
 }
 .section-location .row{
@@ -157,12 +157,6 @@ clear: both;
   text-transform: uppercase;
   font-weight:300;
   margin:50px auto;
-
-}
-#location .col.span-1-of-4.box{
-  width: 200px;
-  margin-left:5px;
-  
 }
 #location img{
   width: 150px;
@@ -185,17 +179,21 @@ clear: both;
 }
 
 .section-testimonials{
-  background-size: cover;
-  background-image: url("../img/back-customers.jpg");
+  background:transparent url("../img/back-customers.jpg") center; 
+  background-size: 70%;
+
   /* background:transparent url("../img/back-customers.jpg") center;  */
   position: relative;
-  width: 100%;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 50px 0;
   z-index: 2;
   
 }
-
+.testimonials-wrapper {
+  width: 980px;
+  margin:auto;
+  z-index: 2;
+  position: relative;
+}
 .section-testimonials h2{
   color:white;
   text-transform: uppercase;
@@ -208,12 +206,6 @@ clear: both;
   
 } */
 
-.section-testimonials .span-1-of-3{
-  /* display: inline-block; */
-  margin-right:-30px;
-  text-align: center;
-  width: ;
-}
 
 .section-testimonials blockquote{
   color: white;
@@ -221,31 +213,29 @@ clear: both;
   padding:50px 10px;
   width: 300px;
   height: auto;
-  margin-right:-20px;
-  float:right;
+  
+  
   padding-right:0;
 
 }
 .section-testimonials cite{
-  margin-top:50px;
-  padding-top:50px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
   
 }
 .section-testimonials cite img{
   width: 30px;
   height: auto;
   border-radius: 50%;
+  margin-right:10px;
 }
 
-.testimonials-opacity{
-  position: absolute;
-  top:0;right:0;bottom:0;left:0;
-  background: rgba(0,0,0,0.8);
-  z-index: 1;
-
-}
 #download {
   padding:50px 100px;
+  background-color: #e7e7e7;
 }
 #download h2{
   text-align: center;
@@ -296,7 +286,8 @@ clear: both;
 .section-form{
   background:transparent url(../img/logo_alpha.png) center no-repeat;
   
-  background-size: 45%;
+  background-size: 38%;
+  padding-top:60px;
   /* opacity: 0.1; */
   
 }
@@ -308,7 +299,6 @@ clear: both;
 }
 .section-form h2{
   text-align: center;
-  margin-bottom: 50px;
   text-transform: uppercase;
   font-weight:300;
 }
@@ -377,6 +367,7 @@ clear: both;
 footer{
 background-color: orange;
 height: 100px;
+padding-top: 20px;
 }
 .footer-nav{
   padding-left: 300px;
